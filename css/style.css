@@ -1,24 +1,33 @@
 body{
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
+    background-image:url(../img/pexels-stein-egil-liland-6007906.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+
 }
+
+
+.p-{
+  display: inline-block;
+}
+
+.div-black{
+    background-color: rgba(0, 0, 0, 0.726);
+    border-radius: 30px;
+}
+
 
 
 .transparente{
-    background-color: rgba(0, 0, 0, 0.39);
-    /* width: 300px; */
     font-size: 40px;
-    height: 200px;
-    /* text-align: center;
-    display: flex;  */
-    justify-content: center; 
-     align-items: center;
-    border-radius: 20px;
-} 
-
-span{
-    font-size: 50px;
+    background-color:rgba(0, 0, 0, 0.493);
+    border-radius: 30px;
 }
 
-p{
-    display: inline-block;
+@media all and (max-width:540px){
+    .transparente{
+        display: none;
+    }
 }

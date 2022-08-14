@@ -14,49 +14,55 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">TIME</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"> iniciar sesion</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Reloj</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contactos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">sobre nosotros</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
+       <!-- nota: decidi no mostrar el reloj en dispositivos celulares por cuestiones de estetica -->
         <section>
-            <div class="text-center text-light my-5">
-                <h1>Time</h1>
-            </div>
-            <article class="container text-center text-light my-4 d-flex justify-content-center" id="reloj">
-                <div class=" transparente w-50 " id="trasparente">
-                        <div class="mt-5">
-                          <div>
-                            <p ><span id="diaSemana"></span> <span id="fecha"></span><span id="mes"></span></p>
-                          </div>   
-                            <p><span id="hora"></span> : <span id="minutos"></span> : <span id="segundos"></span></p>  
-                        </div>
-                </div> 
+            <article class=" text-light my-4  d-flex justify-content-center" id="reloj">
+               <div class=" w-50 transparente text-center py-3">
+                 <p  class="p-"><span id="diaSemana"></span><span id="fecha">fecha</span><span id="meses"></span></p>
+                 <p class="p-"><span id="meses"></span><span id="años">años</span></p>
+                 <div>
+                   <p><span id="hora">hora</span> : <span id="minutos">minutos</span> : <span id="segundos">segundos</span></p>  
+                 </div>
+               </div>      
             </article>
-        </section>
+          </section>
+          <div class="container text-light my-5 div-black py-3">
+            <h1 class="text-center">¿Que es El tiempo?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quidem debitis exercitationem reprehenderit odio maxime unde quibusdam magnam placeat fuga nobis quaerat id, facere dolorum rerum. Ex perspiciatis sunt dolores repellendus laboriosam saepe voluptas molestiae illo velit placeat doloremque tempore, eius distinctio ipsa error illum? Quae amet necessitatibus consectetur optio, perferendis ipsa dolorum tempora error, quidem reprehenderit, aliquam sapiente vel eaque expedita dolorem autem deserunt ratione veniam porro inventore odit recusandae est reiciendis. Sunt debitis accusantium placeat laudantium quasi odio suscipit blanditiis eaque harum iure. Voluptatibus iusto dolorem earum numquam perspiciatis soluta incidunt autem quibusdam quasi vitae. Assumenda, nulla? Sapiente, provident quidem. Tempora quos voluptates, dolor unde fuga veritatis amet! Incidunt quo, nulla nam, eum neque corporis dolorem maiores saepe odit, repellat sequi? Veniam ipsum in dolor aspernatur. Nostrum explicabo fugit error quisquam asperiores recusandae in itaque, porro animi corrupti tenetur praesentium doloribus non ipsum rerum omnis similique enim tempore aperiam. Iste, animi ut obcaecati in eaque consectetur omnis. Esse illo adipisci, saepe ipsum sint praesentium perspiciatis repudiandae unde minima quo eum fuga deleniti et suscipit minus obcaecati quam fugiat nobis enim doloribus labore eius ducimus. Soluta, reprehenderit iste cum accusamus eos quis molestiae nobis inventore recusandae esse sequi voluptas.</p>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="text-center text-light bg-black py-4 mt-5">
+        <h3>Rolling Time</h3>
+      </div>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
