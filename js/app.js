@@ -5,16 +5,25 @@ function reloj(){
     let hora2 = new Date();
     let hora3 = hora2.getHours()
     hora.innerHTML= hora3;
+    if(hora3<10){
+        hora.innerHTML= "0" + hora3;
+    }
     // codigo para visualizar los minutos
     let parrafo = document.getElementById("minutos");
     let numeros = new Date();
     let minutos = numeros.getMinutes();
     parrafo.innerHTML = minutos;
+    if(minutos<10){
+        parrafo.innerHTML = "0" + minutos;
+    }
     // codigo para visualizar los segundos
     let segundos = document.getElementById("segundos");
     let segundos2 = new Date();
     let segundos3 = segundos2.getSeconds();
     segundos.innerHTML=segundos3; 
+    if(segundos3<10){
+        segundos.innerHTML= "0"+ segundos3; 
+    }
     // codigo para visualizar la fecha 
     let fecha = document.getElementById("fecha");
     let fecha2 = new Date();
